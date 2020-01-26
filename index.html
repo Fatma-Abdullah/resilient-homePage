@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Resilient</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="#" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Source Serif Pro', serif;
+            background-image: url("images/circleBg.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        a {
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        section {
+            margin: 4em auto;
+        }
+
+        .header {
+            background-image: url("images/image1.png");
+            padding: 0 0 2em 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header nav {
+            background: #AD8989;
+        }
+
+        .header nav .navbar-brand {
+            margin-right: auto;
+            color: #000000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .header .introDiv {
+            text-align: center;
+        }
+
+        .header .introDiv .row {
+            justify-content: flex-end;
+        }
+
+        .header .introDiv .intro {
+            background: #FAECEC;
+            padding: 5% 1%;
+            margin: 5% 0 2% 0;
+            border-radius: 15px;
+        }
+
+        .header .introDiv .intro h1 {
+            font-size: 45px;
+            line-height: 77px;
+        }
+
+        .header .introDiv .intro .para {
+            font-size: 30px;
+            line-height: 49px;
+            margin: 15% auto;
+        }
+
+        .btn-red {
+            background: #D97373;
+            border-radius: 10px;
+            height: 55px;
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        .btn-red:hover {
+            background: black;
+            color: #D97373;
+            transition: 0.8s ease;
+        }
+
+        .headTitle {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 49px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .about .circleBg {
+            background-image: url(../images/circleBg.png);
+            background-size: cover;
+        }
+
+        .about .aboutContent {
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            position: absolute;
+            top: 49vw;
+            left: 16%;
+            right: 16%;
+            padding: 1em;
+        }
+
+        .about .row {
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .about .row .para {
+            font-size: 21px;
+            line-height: 36px;
+            text-align: center;
+            color: #444343;
+        }
+
+        .about .row .icon {
+            text-align: center;
+        }
+
+        .about .row .icon img {
+            width: 40px;
+        }
+
+        .circleInfo {
+            margin: 30% auto 10% auto;
+          
+        }
+        .circleInfo img{
+                width: 20em;
+            }
+        .circleInfo .row {
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .circleInfo {
+                font-size: 58%;
+            }
+        }
+
+        .circleInfo .box-organization-chart {
+            position: relative;
+        }
+
+        .circleInfo .box-organization-chart .item-title {
+            color: #333;
+            z-index: 10;
+            position: relative;
+            padding: 6rem 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .circleInfo .box-organization-chart .item-title h4 {
+            font-size: 2.8rem;
+            letter-spacing: 0.2px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (min-width: 576px) {
+            .circleInfo .box-organization-chart .item-title {
+                z-index: 1;
+                padding: 6rem 0;
+                position: absolute;
+                top: 20%;
+            }
+        }
+
+        .circleInfo .box-organization-chart ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .circleInfo .box-organization-chart .box-item {
+            border-radius: 5px !important;
+            background: #FFA7A7;
+            text-align: center;
+            padding: 1em 13px;
+            text-align: center;
+            margin: -1em auto;
+        }
+
+        @media (min-width: 576px) {
+            .circleInfo .box-organization-chart .box-item {
+                border-radius: 30rem;
+            }
+        }
+
+        .circleInfo .box-organization-chart h5 {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .circleInfo .box-organization-chart ul.list-baloons {
+            border: 3px solid #FFA7A7;
+        }
+
+        @media (min-width: 576px) {
+            .circleInfo .box-organization-chart ul.list-baloons {
+                position: relative;
+                width: 35rem;
+                height: 35rem;
+                padding: 0;
+                border-radius: 50%;
+                list-style: none;
+                margin: 4rem auto 2rem;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons h5 {
+                font-size: 1.3rem;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>* {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 11rem;
+                height: 11rem;
+                margin: -5.5rem;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(1) {
+                transform: rotate(-90deg) translate(18.5rem) rotate(90deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(2) {
+                transform: rotate(-30deg) translate(17.5rem) rotate(30deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(3) {
+                transform: rotate(30deg) translate(19.5rem) rotate(-30deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(4) {
+                transform: rotate(90deg) translate(22.5rem) rotate(-90deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(5) {
+                transform: rotate(150deg) translate(19.5rem) rotate(-150deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>*:nth-of-type(6) {
+                transform: rotate(210deg) translate(17.5rem) rotate(-210deg);
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(1) {
+                top: 65%;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(2),
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(6) {
+                top: 66%;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(4) {
+                top: 38%;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(3),
+            .circleInfo .box-organization-chart ul.list-baloons>li:nth-of-type(5) {
+                top: 50%;
+            }
+        }
+
+        .circleInfo .circleInfo {
+            margin: 35% auto 13% auto;
+        }
+
+        .circleInfo .hiddenRect {
+            visibility: hidden;
+        }
+
+        .para {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
+        .heart ul {
+            list-style: none;
+            margin: 8% auto;
+        }
+
+        .heart .heartContent {
+            align-items: center;
+        }
+
+        .featured .content {
+            padding: 3em 0;
+            background: #FAECEC;
+            border-radius: 60px;
+        }
+
+        .featured .content .links  {
+            align-items: center;
+            margin: 0 auto 4em auto;
+            text-align: center;
+        }
+
+        .featured .content .links img:hover {
+            box-shadow: -1px 2px 11px 4px grey;
+        }
+
+        .featured .para {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .Differentiating {
+            background-image: url("images/DifferentiatingBg.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .Differentiating .card-container {
+            perspective: 900px;
+            margin-right: 20px;
+        }
+
+        .Differentiating .para {
+            font-size: 23px;
+        }
+
+        .Differentiating .card {
+            background: #FFB8B8;
+            border-radius: 5px;
+            padding: 1em;
+            text-align: center;
+            height: 18em;
+            margin: 1em 5px;
+            display: flex;
+            justify-content: center;
+            transition: all 0.6s ease;
+            transform-style: preserve-3d;
+        }
+
+        .Differentiating .card p {
+            margin: 10px auto;
+        }
+
+        .Differentiating .front {
+            color: #000;
+        }
+
+        .Differentiating .front {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .Differentiating .back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .Differentiating .card-container:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .Differentiating .card-container:hover .card .back {
+            display: block;
+        }
+
+        .Differentiating .card-container:hover .card .front {
+            display: none;
+        }
+
+        .Differentiating .card-container:hover .item {
+            transform: rotateY(180deg);
+        }
+
+        .Differentiating .back {
+            transform: rotateY(180deg);
+        }
+
+        .Differentiating .btn-red {
+            margin-top: 1em;
+            font-size: 22px;
+            /* font-weight: bold; */
+        }
+
+        .Differentiating a.back {
+            margin: 10px auto;
+        }
+
+        .doctorInfo .pink {
+            background: #FAECEC;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .doctorInfo .pink .drImg {
+            margin: 1em auto;
+            margin-bottom: 2em;
+            margin: 2.2vw;
+        }
+
+        .doctorInfo .pink .drImg span {
+            display: block;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .doctorInfo .para {
+            font-size: 24px;
+            margin-bottom: 1em;
+        }
+
+        .doctorInfo .pinkDiv {
+            background: #FAECEC;
+            justify-content: center;
+            padding: 1em 0;
+        }
+
+        .books {
+            background: #FAECEC;
+            border-radius: 4em;
+            padding: 2em 0;
+        }
+        .books .row{
+    justify-content: space-around;
+        }
+        .books img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .books img:hover {
+            box-shadow: -1px 2px 11px 4px grey;
+        }
+
+        .books .col-6 {
+            margin-top: 1em;
+        }
+
+        .copyRights {
+            background: #AD8989;
+        }
+
+        .copyRights .para {
+            font-size: 16px;
+            margin-bottom: 0;
+            margin: 1em auto;
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 320px) {
+
+            html,
+            body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            /* white space */
+            .row {
+                max-width: 1140px;
+                margin: 0 auto;
+            }
+
+            .para {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+
+            .copyRights .para {
+                font-size: 11px;
+            }
+
+            .doctorInfo .para {
+                font-size: 22px;
+                margin-bottom: 1em;
+            }
+
+            .Differentiating .para {
+                font-size: 17px;
+            }
+
+            .headTitle {
+                font-size: 22px;
+            }
+
+            .about .aboutContent {
+                background: #FFFFFF;
+                border: 1px solid #000000;
+                border-radius: 10px;
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .about .row .para {
+                font-size: 18px;
+            }
+
+            .featured .para {
+                font-size: 15px;
+            }
+
+            .hiddenRect {
+                display: none;
+            }
+
+            .header .introDiv .intro h1 {
+                font-size: 30px;
+            }
+
+            .header .introDiv .intro .para {
+                font-size: 24px;
+                line-height: 49px;
+                margin: 3% auto;
+            }
+
+            .circleInfo .box-organization-chart ul.list-baloons {
+                border: none;
+            }
+
+            .circleInfo .box-organization-chart .box-item {
+                margin: 2em auto;
+            }
+
+            .circleInfo .box-organization-chart .item-title {
+                padding: 10px 0 0 0;
+            }
+        }
+
+        @media screen and (max-width: 765px) and (min-width: 320px) {
+            .copyRights .para {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .circleInfo .box-organization-chart ul.list-baloons h5 {
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="introDiv">
+                <div class="row">
+                    <div class="col-12 col-sm-5 intro" data-aos="fade-down">
+                        <h1>The Resilient Option</h1>
+                        <p class="para">
+                            Build yourself a resilient brain skilled at handling change and finding peace and happiness
+
+                        </p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-10 m-auto">
+                                <a href="https://sso.teachable.com/secure/461670/checkout/1563120/unblemished1"
+                                    class="btn btn-red btn-block">Sign up now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="row">
+            <div class="col-12 col-sm-8 aboutContent">
+                <h3 class="headTitle">
+                    Over the last two decades, our team has helped tens of thousands of individuals:
+                </h3>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-3" data-aos="fade-right">
+                            <div class="icon">
+                                <img class="img-fluid"
+                                    src="images/supervisor_account.png"
+                                    alt="">
+                                <p class="para">
+                                    Better manage stress
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3" data-aos="fade-down">
+                            <div class="icon">
+                                <img class="img-fluid"
+                                    src="images/thumb_up.png"
+                                    alt="">
+                                <p class="para">
+                                    Succeed at work
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3" data-aos="fade-left">
+                            <div class="icon">
+                                <img class="img-fluid"
+                                    src="images/favorite.png"
+                                    alt="">
+                                <p class="para">
+                                    Find joy in relationships
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-3" data-aos="fade-right">
+                            <div class="icon">
+                                <img class="img-fluid"
+                                    src="images/accessibility.png"
+                                    alt="">
+                                <p class="para">
+                                    Develop healthy self-worth
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3" data-aos="fade-left">
+                            <div class="icon">
+                                <img class="img-fluid"
+                                    src="images/rowing.png"
+                                    alt="">
+                                <p class="para">
+                                    Build resilience
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="circleInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <h3 class="headTitle">After completing over 30 clinical studies, we have developed a four module
+                        digital program: The Resilient Option </h3>
+                </div>
+            </div>
+            <div class="box-organization-chart">
+                <div class="item-title" data-aos="zoom-out-up">
+                    <!-- <h4>CUSTOMER</h4> -->
+                    <img class="img-fluid"
+                        src="images/computer.PNG">
+                </div>
+                <ul class="list-baloons">
+                    <li>
+                        <div class="box-item">
+                            <h5>Science enabled, science proven</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <h5>Reached over half a million people</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <h5>Uncovers resilience depleting neural traps </h5>
+                        </div>
+                    </li>
+                    <li class="hiddenRect">
+                        <div class="box-item">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <h5>Actionable and time efficient</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <h5>Novel, fresh, uplifting</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-4 m-auto">
+                    <a href="https://sso.teachable.com/secure/461670/checkout/1563120/unblemished1"
+                        class="btn btn-red btn-block mt-3">Enroll</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="heart">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-10">
+                    <h3 class="headTitle">Get to the heart of the matter - your brain </h3>
+                </div>
+            </div>
+            <div class="row heartContent">
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <img class="img-fluid"
+                        src="images/heart.png"
+                        alt="">
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left">
+                    <p class="para">
+                        Learn key neural insights central to your success and wellbeing:
+                    </p>
+                    <ul class="para">
+                        <li>- The seesawing brain’s networks</li>
+                        <li>- The biology of mental fatigue</li>
+                        <li>- The brain’s negativity bias</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="content">
+            <div class="container">
+
+                <div class="row mb-5">
+                    <div class="col-12 col-md-10">
+                        <h3 class="headTitle">Featured in the world’s most reputed publications</h3>
+                        <p class="para">
+                            Click on the links below to learn more
+                        </p>
+                    </div>
+                </div>
+                <div class="row links">
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.theatlantic.com/health/archive/2015/01/three-neural-predispositions/384642/">
+                            <img class="img-fluid"
+                                src="images/image 6.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.nytimes.com/2012/08/12/jobs/how-music-can-improve-worker-productivity-workstation.html">
+                            <img class="img-fluid"
+                                src="images/image 7.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.forbes.com/sites/jenniferwang/2016/10/18/mind-over-money-how-to-balance-mental-wellbeing-with-busy-careers-from-mayo-clinics-dr-sood/#7a56653f57e8">
+                            <img class="img-fluid"
+                                src="images/image 8.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a href="https://newyork.cbslocal.com/2015/06/05/researchers-cracked-code-happiness/">
+                            <img class="img-fluid"
+                                src="images/image 10.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a href="https://www.wsj.com/articles/are-you-too-busy-how-to-know-your-limits-1400020515">
+                            <img class="img-fluid"
+                                src="images/image 9.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.webmd.com/mental-health/news/20180822/can-tragedy-teach-resilience-and-can-it-last">
+                            <img class="img-fluid"
+                                src="images/image 11.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 links">
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="http://www.startribune.com/mayo-clinic-doctor-has-your-prescription-for-happiness/322970311/">
+                            <img class="img-fluid"
+                                src="images/image 14.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.usatoday.com/story/news/nation-now/2014/10/21/reduce-stress-holidays-spending-exercise/17635429/">
+                            <img class="img-fluid"
+                                src="images/image 15.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a href="https://edition.cnn.com/2017/03/30/health/anger-room-stress-relief/index.html">
+                            <img class="img-fluid"
+                                src="images/image 12.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.huffpost.com/entry/easy-ways-to-reduce-stress-and-live-happy_b_57f3f035e4b0f482f8f0be5b?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAG9iYK4wSk5kH-NgfzhBCPSQrbxtL8Ge6M5sZGH0OiG0hWFKX70TcvRilDkxRRcnCUndl4QCE5l984BN5HI4jLygAYu8zYsoHfh8uDheOYn7DOSW3afUpnoWgsl-Duusr6K1isaE8QbpyZB1rBf8fIhC53hthXbjcuIEKMDpY5p6&guccounter=2">
+                            <img class="img-fluid"
+                                src="images/image 13.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a href="https://www.prevention.com/health/mental-health/a26678044/women-and-stress/">
+                            <img class="img-fluid"
+                                src="images/image 16.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a
+                            href="https://www.everydayhealth.com/wellness/united-states-of-stress/advisory-board/amit-sood-md-q-a/">
+                            <img class="img-fluid"
+                                src="images/image 17.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Differentiating">
+        <div class="content">
+            <div class="container">
+
+                <div class="row mb-5">
+                    <div class="col-12 col-md-10">
+                        <h3 class="headTitle">Differentiating us from the rest - our extensive research</h3>
+                        <p class="para">
+                            We have conducted over 30 research studies, the most for any resilience program. These
+                            studies have consistently proven the effectivness of our programs for different groups.
+                        </p>
+                    </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Professionals</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=30225418">
+                                    Our worksite wellness intervention improved happiness, life satisfaction, and
+                                    gratitude in professionals
+                                </a>
+                                <a class="back"
+                                    href="https://www.ingentaconnect.com/content/hsp/mih/2017/00000002/00000002/art00008">
+                                    Implementation of our program was associated with decreased burnout over a two-year
+                                    period.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Corporate Executives</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/31185049">
+                                    A large study of corporate executives showed higher resilience is predictive of
+                                    lower depression and anxiety
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Students</span>
+                                </div>
+                                <p class="back">
+                                    In several separate studies, our program improved stress, anxiety, and mindfulness
+                                    among student nurses, medical students, fellows, and nurse anesthetists
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Public School Teachers</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=31445365">
+                                    Implementation of our program among public school teachers improved stress, anxiety,
+                                    happiness, and interaction with students
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Physicians</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/21279454">
+                                    Our program improved stress, anxiety, resilience and quality of life among
+                                    physicians at a tertiary care medical center
+                                </a>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/25443423">
+                                    Radiologists experienced improved anxiety, stress, quality of life, and
+                                    mindfulness with implementing our program
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Nurses</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28727625">
+                                    Nurses implementing our program experienced improvement in their anxiety, stress,
+                                    burnout, resilience, happiness, and mindfulness
+                                </a>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/31651555">
+                                    Implementation of our program enhanced personal and professional development among
+                                    nurses
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Caregivers</span>
+                                </div>
+                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/27618687">
+                                    Our program combined with mindfulness training improved stress, depression, anxiety,
+                                    and negative affect among caregivers
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <span>Patients</span>
+                                </div>
+                                <div class="back">
+                                    <p>
+                                        In several separate studies, our program has helped the following group of patients: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">Breast cancer patients</a>, patients with malignant melanoma, women with heart disease, patients receiving a transplant, patients with depression, women receiving infertility treatment, patients with irritable bowel syndrome.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-3">
+                        <a href="https://www.resilientoption.com/p/tellmemore" class="btn btn-red btn-block">Learn
+                            more</a>
+                    </div>
+                    <div class="col-10 col-md-3">
+                        <a href="https://sso.teachable.com/secure/461670/checkout/1563120/unblemished1"
+                            class="btn btn-red btn-block">Enroll</a>
+                    </div>
+                    <div class="col-10 col-md-3">
+                        <a href="https://sso.teachable.com/secure/461670/checkout/1546096/unblemished1"
+                            class="btn btn-red btn-block">Legacy purchase</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 mt-4 text-center">
+                        <p class="para">
+                            Your legacy purchase supports our work. All legacy participants receive a signed copy of Dr.
+                            Sood’s book.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="doctorInfo">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-10">
+                    <h3 class="headTitle">About Dr. Sood</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 pink">
+                    <div class="drImg">
+                        <img class="img-fluid"
+                            src="images/image 23.png"
+                            alt="">
+                        <span>Dr. Sood with His Holiness the Dalai Lama</span>
+                    </div>
+                    <div class="drImg">
+                        <img class="img-fluid"
+                            src="images/image 24.png"
+                            alt="">
+                        <span>Dr. Sood with Senator Elizabeth Dole</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="para">
+                        Dr. Amit Sood is one of the world's leading experts on resiliency and wellbeing. He is also the
+                        creator of the Resilient Option program and is the Executive Director of the Global Center for
+                        Resiliency & Wellbeing.
+                    </p>
+                    <p class="para">
+                        Dr. Sood is a former Professor and Chair for student life & wellness at the Mayo Clinic and
+                        currently serves on the Wellness Advisory Board for Everyday Health. He is also an RWJ
+                        Foundation <a
+                            href="https://www.stitcher.com/podcast/robert-wood-johnson-foundation/rwjf-podcasts/e/41542084#/"
+                            class="link">Health Care Pioneer</a>
+                    </p>
+                    <p class="para">
+                        He has received numerous awards at the Mayo Clinic including the 2010 Distinguished Service,
+                        2010 Innovator of the Year, 2013 Outstanding Physician Scientist, and 2016 Faculty of the Year.
+                    </p>
+                    <p class="para">
+                        Dr. Sood was named as one among top 20 intelligent optimists helping the world be a better place
+                        by Ode Magazine. He has also been a speaker at several prestigious forums and organizations
+                        including <a href="https://www.youtube.com/watch?v=KZIGekgoaz4&t=2s" class="link">TEDx</a>, Lake
+                        Nona, <a
+                            href="https://www.forbes.com/sites/jenniferwang/2016/10/18/mind-over-money-how-to-balance-mental-wellbeing-with-busy-careers-from-mayo-clinics-dr-sood/#27ee7de057e8"
+                            class="link">Forbes Under 30 Forum</a>, Conference Board, Beckers, YPO, <a
+                            href="https://www.wnpr.org/post/mayo-clinic-handbook-happiness" class="link">NPR</a>, NAMI,
+                        NBGH, NASA, among other.
+                    </p>
+                    <p class="para">
+                        <a href="https://twitter.com/AmitSoodMD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            class="link">Twitter: @amitsoodmd</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pinkDiv">
+            <div class="container">
+
+                <div class="row ">
+                    <div class="col-10 col-md-2">
+                        <a href="https://www.resiliencetrainer.com/contact-us" class="btn btn-red btn-block">Contact
+                            us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="content">
+            <div class="container">
+                <p class="para">
+                    Books authored by Dr. Sood:
+                </p>
+
+                <div class="row">
+                    <div class="col-6 col-md-2" data-aos="fade-right">
+                        <a
+                            href="https://www.amazon.com/Mayo-Clinic-Guide-Stress-Free-Living/dp/0738217123/ref=sr_1_2?keywords=sood&qid=1577112951&sr=8-2">
+                            <img class="img-fluid"
+                                src="images/image 18.png"
+                                alt="book"> </a>
+                    </div>
+                    <div class="col-6 col-md-2" data-aos="fade-right">
+                        <a
+                            href="https://www.amazon.com/Mayo-Clinic-Handbook-Happiness-Four-Step/dp/0738217859/ref=pd_sbs_14_2/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0738217859&pd_rd_r=ae5ed1cb-5c7d-4810-a4fc-88a6bf072d49&pd_rd_w=UH8P5&pd_rd_wg=hkRXX&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=HZKTBGRRKSRCCAJF8HQN&psc=1&refRID=HZKTBGRRKSRCCAJF8HQN">
+                            <img class="img-fluid"
+                                src="images/image 19.png"
+                                alt="book"> </a>
+                    </div>
+                    <div class="col-6 col-md-2" data-aos="fade-down">
+                        <a
+                            href="https://www.amazon.com/Mindfulness-Redesigned-Twenty-First-Century-Hummingbird/dp/0999552503/ref=pd_sbs_14_4/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0999552503&pd_rd_r=6d4ce55d-cbf7-42ee-8dd7-c01d88e0fbe8&pd_rd_w=nhuuO&pd_rd_wg=Inhlz&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=MRQYMT0GVKPJM3KH2VSH&psc=1&refRID=MRQYMT0GVKPJM3KH2VSH">
+                            <img class="img-fluid"
+                                src="images/image 20.png"
+                                alt="book"> </a>
+                    </div>
+                    <div class="col-6 col-md-2" data-aos="fade-left">
+                        <a
+                            href="https://www.amazon.com/SMART-Dr-Sood-Four-Module-Management/dp/0999552546/ref=pd_cp_14_2/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0999552546&pd_rd_r=b4716938-5062-47e3-880c-324c65b4db15&pd_rd_w=zfrKm&pd_rd_wg=7Ua3L&pf_rd_p=0e5324e1-c848-4872-bbd5-5be6baedf80e&pf_rd_r=6HPRBFYRCANV1E1XR0EZ&psc=1&refRID=6HPRBFYRCANV1E1XR0EZ">
+                            <img class="img-fluid"
+                                src="images/image 21.png"
+                                alt="book"> </a>
+                    </div>
+                    <div class="col-6 col-md-2" data-aos="fade-left">
+                        <a
+                            href="https://www.amazon.com/Resilience-Journal-2-Minute-Commitment-Entire/dp/099955252X/ref=pd_sbs_14_5/133-7265255-4665327?_encoding=UTF8&pd_rd_i=099955252X&pd_rd_r=6c10174e-6049-447e-b034-0a9ac88cd23c&pd_rd_w=sEUi5&pd_rd_wg=jygla&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=VTM1WF2JG3QAZRB2SWPX&psc=1&refRID=VTM1WF2JG3QAZRB2SWPX">
+                            <img class="img-fluid"
+                                src="images/image 22.png"
+                                alt="book"> </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+
+
+
+</html>
