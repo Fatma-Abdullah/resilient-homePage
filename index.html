@@ -128,7 +128,7 @@
             border: 1px solid #000000;
             border-radius: 10px;
             position: absolute;
-            top: 49vw;
+            top: 43em;
             left: 16%;
             right: 16%;
             padding: 1em;
@@ -155,12 +155,14 @@
         }
 
         .circleInfo {
-            margin: 30% auto 10% auto;
-          
+            margin: 35% auto 10% auto;
+
         }
-        .circleInfo img{
-                width: 20em;
-            }
+
+        .circleInfo img {
+            width: 18em;
+        }
+
         .circleInfo .row {
             justify-content: center;
         }
@@ -245,6 +247,7 @@
                 border-radius: 50%;
                 list-style: none;
                 margin: 4rem auto 2rem;
+                border: 1px solid #840000 !important;
             }
 
             .circleInfo .box-organization-chart ul.list-baloons h5 {
@@ -332,10 +335,13 @@
             border-radius: 60px;
         }
 
-        .featured .content .links  {
+        .featured .content .links {
             align-items: center;
             margin: 0 auto 3em auto;
             text-align: center;
+        }
+        .featured .content .links .col-6  {
+           margin-bottom:2em
         }
 
         .featured .content .links img:hover {
@@ -462,9 +468,11 @@
             border-radius: 4em;
             padding: 2em 0;
         }
-        .books .row{
-    justify-content: space-around;
+
+        .books .row {
+            justify-content: space-around;
         }
+
         .books img {
             height: 100%;
             width: 100%;
@@ -583,6 +591,50 @@
                 margin: 0;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            .circleInfo {
+                margin: 7% auto 0 auto;
+            }
+
+            .about .row .para {
+                line-height: 24px;
+
+            }
+        }
+
+
+        @media screen and (max-width: 768px) and (min-width: 768px) {
+            .Differentiating .front {
+                font-size: 16px;
+            }
+
+            .Differentiating .back {
+                font-size: 12px;
+            }
+
+            .Differentiating .card {
+                height: 20em;
+
+            }
+            .btn-red {
+    font-size: 15px;
+}
+        }
+
+        @media (min-width: 769px) {
+            .circleInfo.col-md-10 {
+                margin-top: 3em;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .about .aboutContent {
+                position: absolute;
+                top: 39em;
+
+            }
+        }
     </style>
 
 </head>
@@ -621,31 +673,25 @@
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-12 col-sm-3" data-aos="fade-right">
+                        <div class="col-12 col-sm-3 mb-2" data-aos="fade-right">
                             <div class="icon">
-                                <img class="img-fluid"
-                                    src="images/supervisor_account.png"
-                                    alt="">
+                                <img class="img-fluid" src="images/supervisor_account.png" alt="">
                                 <p class="para">
                                     Better manage stress
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3" data-aos="fade-down">
+                        <div class="col-12 col-sm-3 mb-2" data-aos="fade-down">
                             <div class="icon">
-                                <img class="img-fluid"
-                                    src="images/thumb_up.png"
-                                    alt="">
+                                <img class="img-fluid" src="images/thumb_up.png" alt="">
                                 <p class="para">
                                     Succeed at work
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3" data-aos="fade-left">
+                        <div class="col-12 col-sm-3 mb-2" data-aos="fade-left">
                             <div class="icon">
-                                <img class="img-fluid"
-                                    src="images/favorite.png"
-                                    alt="">
+                                <img class="img-fluid" src="images/favorite.png" alt="">
                                 <p class="para">
                                     Find joy in relationships
                                 </p>
@@ -654,21 +700,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-sm-3" data-aos="fade-right">
+                        <div class="col-12 col-sm-3 mb-2" data-aos="fade-right">
                             <div class="icon">
-                                <img class="img-fluid"
-                                    src="images/accessibility.png"
-                                    alt="">
+                                <img class="img-fluid" src="images/accessibility.png" alt="">
                                 <p class="para">
                                     Develop healthy self-worth
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3" data-aos="fade-left">
+                        <div class="col-12 col-sm-3 mb-2" data-aos="fade-left">
                             <div class="icon">
-                                <img class="img-fluid"
-                                    src="images/rowing.png"
-                                    alt="">
+                                <img class="img-fluid" src="images/rowing.png" alt="">
                                 <p class="para">
                                     Build resilience
                                 </p>
@@ -693,8 +735,7 @@
             <div class="box-organization-chart">
                 <div class="item-title" data-aos="zoom-out-up">
                     <!-- <h4>CUSTOMER</h4> -->
-                    <img class="img-fluid"
-                        src="images/computer.PNG">
+                    <img class="img-fluid" src="images/computer.PNG">
                 </div>
                 <ul class="list-baloons">
                     <li>
@@ -748,9 +789,7 @@
             </div>
             <div class="row heartContent">
                 <div class="col-12 col-md-6" data-aos="fade-right">
-                    <img class="img-fluid"
-                        src="images/heart.png"
-                        alt="">
+                    <img class="img-fluid" src="images/heart.png" alt="">
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-left">
                     <p class="para">
@@ -780,95 +819,71 @@
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.theatlantic.com/health/archive/2015/01/three-neural-predispositions/384642/">
-                            <img class="img-fluid"
-                                src="images/image 6.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 6.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.nytimes.com/2012/08/12/jobs/how-music-can-improve-worker-productivity-workstation.html">
-                            <img class="img-fluid"
-                                src="images/image 7.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 7.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.forbes.com/sites/jenniferwang/2016/10/18/mind-over-money-how-to-balance-mental-wellbeing-with-busy-careers-from-mayo-clinics-dr-sood/#7a56653f57e8">
-                            <img class="img-fluid"
-                                src="images/image 8.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 8.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="https://newyork.cbslocal.com/2015/06/05/researchers-cracked-code-happiness/">
-                            <img class="img-fluid"
-                                src="images/image 10.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 10.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="https://www.wsj.com/articles/are-you-too-busy-how-to-know-your-limits-1400020515">
-                            <img class="img-fluid"
-                                src="images/image 9.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 9.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.webmd.com/mental-health/news/20180822/can-tragedy-teach-resilience-and-can-it-last">
-                            <img class="img-fluid"
-                                src="images/image 11.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 11.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="row mt-3 links">
+                <div class="row links">
                     <div class="col-6 col-md-2">
                         <a
                             href="http://www.startribune.com/mayo-clinic-doctor-has-your-prescription-for-happiness/322970311/">
-                            <img class="img-fluid"
-                                src="images/image 14.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 14.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.usatoday.com/story/news/nation-now/2014/10/21/reduce-stress-holidays-spending-exercise/17635429/">
-                            <img class="img-fluid"
-                                src="images/image 15.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 15.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="https://edition.cnn.com/2017/03/30/health/anger-room-stress-relief/index.html">
-                            <img class="img-fluid"
-                                src="images/image 12.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 12.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.huffpost.com/entry/easy-ways-to-reduce-stress-and-live-happy_b_57f3f035e4b0f482f8f0be5b?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAG9iYK4wSk5kH-NgfzhBCPSQrbxtL8Ge6M5sZGH0OiG0hWFKX70TcvRilDkxRRcnCUndl4QCE5l984BN5HI4jLygAYu8zYsoHfh8uDheOYn7DOSW3afUpnoWgsl-Duusr6K1isaE8QbpyZB1rBf8fIhC53hthXbjcuIEKMDpY5p6&guccounter=2">
-                            <img class="img-fluid"
-                                src="images/image 13.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 13.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="https://www.prevention.com/health/mental-health/a26678044/women-and-stress/">
-                            <img class="img-fluid"
-                                src="images/image 16.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 16.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a
                             href="https://www.everydayhealth.com/wellness/united-states-of-stress/advisory-board/amit-sood-md-q-a/">
-                            <img class="img-fluid"
-                                src="images/image 17.png"
-                                alt="">
+                            <img class="img-fluid" src="images/image 17.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -1005,7 +1020,11 @@
                                 </div>
                                 <div class="back">
                                     <p>
-                                        In several separate studies, our program has helped the following group of patients: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">Breast cancer patients</a>, patients with malignant melanoma, women with heart disease, patients receiving a transplant, patients with depression, women receiving infertility treatment, patients with irritable bowel syndrome.
+                                        In several separate studies, our program has helped the following group of
+                                        patients: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">Breast cancer
+                                            patients</a>, patients with malignant melanoma, women with heart disease,
+                                        patients receiving a transplant, patients with depression, women receiving
+                                        infertility treatment, patients with irritable bowel syndrome.
 
                                     </p>
                                 </div>
@@ -1050,15 +1069,11 @@
             <div class="row">
                 <div class="col-12 col-md-4 pink">
                     <div class="drImg">
-                        <img class="img-fluid"
-                            src="images/image 23.png"
-                            alt="">
+                        <img class="img-fluid" src="images/image 23.png" alt="">
                         <span>Dr. Sood with His Holiness the Dalai Lama</span>
                     </div>
                     <div class="drImg">
-                        <img class="img-fluid"
-                            src="images/image 24.png"
-                            alt="">
+                        <img class="img-fluid" src="images/image 24.png" alt="">
                         <span>Dr. Sood with Senator Elizabeth Dole</span>
                     </div>
                 </div>
@@ -1100,7 +1115,7 @@
             <div class="container">
 
                 <div class="row ">
-                    <div class="col-10 col-md-2">
+                    <div class="col-10 col-md-3">
                         <a href="https://www.resiliencetrainer.com/contact-us" class="btn btn-red btn-block">Contact
                             us</a>
                     </div>
@@ -1120,37 +1135,27 @@
                     <div class="col-6 col-md-2" data-aos="fade-right">
                         <a
                             href="https://www.amazon.com/Mayo-Clinic-Guide-Stress-Free-Living/dp/0738217123/ref=sr_1_2?keywords=sood&qid=1577112951&sr=8-2">
-                            <img class="img-fluid"
-                                src="images/image 18.png"
-                                alt="book"> </a>
+                            <img class="img-fluid" src="images/image 18.png" alt="book"> </a>
                     </div>
                     <div class="col-6 col-md-2" data-aos="fade-right">
                         <a
                             href="https://www.amazon.com/Mayo-Clinic-Handbook-Happiness-Four-Step/dp/0738217859/ref=pd_sbs_14_2/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0738217859&pd_rd_r=ae5ed1cb-5c7d-4810-a4fc-88a6bf072d49&pd_rd_w=UH8P5&pd_rd_wg=hkRXX&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=HZKTBGRRKSRCCAJF8HQN&psc=1&refRID=HZKTBGRRKSRCCAJF8HQN">
-                            <img class="img-fluid"
-                                src="images/image 19.png"
-                                alt="book"> </a>
+                            <img class="img-fluid" src="images/image 19.png" alt="book"> </a>
                     </div>
                     <div class="col-6 col-md-2" data-aos="fade-down">
                         <a
                             href="https://www.amazon.com/Mindfulness-Redesigned-Twenty-First-Century-Hummingbird/dp/0999552503/ref=pd_sbs_14_4/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0999552503&pd_rd_r=6d4ce55d-cbf7-42ee-8dd7-c01d88e0fbe8&pd_rd_w=nhuuO&pd_rd_wg=Inhlz&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=MRQYMT0GVKPJM3KH2VSH&psc=1&refRID=MRQYMT0GVKPJM3KH2VSH">
-                            <img class="img-fluid"
-                                src="images/image 20.png"
-                                alt="book"> </a>
+                            <img class="img-fluid" src="images/image 20.png" alt="book"> </a>
                     </div>
                     <div class="col-6 col-md-2" data-aos="fade-left">
                         <a
                             href="https://www.amazon.com/SMART-Dr-Sood-Four-Module-Management/dp/0999552546/ref=pd_cp_14_2/133-7265255-4665327?_encoding=UTF8&pd_rd_i=0999552546&pd_rd_r=b4716938-5062-47e3-880c-324c65b4db15&pd_rd_w=zfrKm&pd_rd_wg=7Ua3L&pf_rd_p=0e5324e1-c848-4872-bbd5-5be6baedf80e&pf_rd_r=6HPRBFYRCANV1E1XR0EZ&psc=1&refRID=6HPRBFYRCANV1E1XR0EZ">
-                            <img class="img-fluid"
-                                src="images/image 21.png"
-                                alt="book"> </a>
+                            <img class="img-fluid" src="images/image 21.png" alt="book"> </a>
                     </div>
                     <div class="col-6 col-md-2" data-aos="fade-left">
                         <a
                             href="https://www.amazon.com/Resilience-Journal-2-Minute-Commitment-Entire/dp/099955252X/ref=pd_sbs_14_5/133-7265255-4665327?_encoding=UTF8&pd_rd_i=099955252X&pd_rd_r=6c10174e-6049-447e-b034-0a9ac88cd23c&pd_rd_w=sEUi5&pd_rd_wg=jygla&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=VTM1WF2JG3QAZRB2SWPX&psc=1&refRID=VTM1WF2JG3QAZRB2SWPX">
-                            <img class="img-fluid"
-                                src="images/image 22.png"
-                                alt="book"> </a>
+                            <img class="img-fluid" src="images/image 22.png" alt="book"> </a>
                     </div>
                 </div>
             </div>
