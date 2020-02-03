@@ -410,18 +410,17 @@
         .Differentiating .card-container:hover .card {
             transform: rotateY(180deg);
         }
+        .Differentiating .card-container:hover .card .front {
+            display: none;
+        }
 
         .Differentiating .card-container:hover .card .back {
         display: block !important ;
         width: 100%;
         -webkit-display:block;
         /* -webkit-transform: translate3d(0,0,0) */
-        background-image: -webkit-gradient(linear,left center,right center,from(green),to(yellow));
         }
-        .Differentiating .card-container:hover .card .front {
-            display: none;
-        }
-
+       
         .Differentiating .card-container:hover .item {
             transform: rotateY(180deg);
         }
