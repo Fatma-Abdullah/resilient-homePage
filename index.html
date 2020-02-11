@@ -405,8 +405,10 @@
             align-items: center;
             justify-content: center;
             display: none;
-            font-size: 15px;
+            font-size: 14px;
             text-align: left;
+            word-spacing: 2px;
+            /* line-height: 25px; */
         }
 
         .Differentiating .card-container:hover .card {
@@ -633,6 +635,8 @@
 
             .Differentiating .card {
                 height: 23em;
+                padding: 1em 3px;
+
 
             }
 
@@ -667,7 +671,16 @@
                 font-size: 40px;
                 line-height: 77px;
             }
+
         }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+            .Differentiating .card {
+                padding: 1em 3px;
+            }
+        }
+
 
         @media (min-width: 1440px) {
             .about .aboutContent {
@@ -688,6 +701,7 @@
 
             .Differentiating .card {
                 height: 23em;
+                padding: 1em 3px;
 
             }
 
@@ -992,7 +1006,7 @@
                                 </div>
                                 <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=30225418">
                                     Our worksite wellness intervention improved happiness, life satisfaction, and
-                                    gratitude in professionals
+                                    gratitude in professionals.
                                 </a>
                                 <a class="back"
                                     href="https://www.ingentaconnect.com/content/hsp/mih/2017/00000002/00000002/art00008">
@@ -1010,7 +1024,7 @@
                                 </div>
                                 <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/31185049">
                                     A large study of corporate executives showed higher resilience is predictive of
-                                    lower depression and anxiety
+                                    lower depression and anxiety.
                                 </a>
                             </div>
                         </div>
@@ -1024,7 +1038,7 @@
                                 </div>
                                 <p class="back">
                                     In several separate studies, our program improved stress, anxiety, and mindfulness
-                                    among student nurses, medical students, fellows, and nurse anesthetists
+                                    among student nurses, medical students, fellows, and nurse anesthetists.
                                 </p>
                             </div>
                         </div>
@@ -1037,7 +1051,7 @@
                                 </div>
                                 <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=31445365">
                                     Implementation of our program among public school teachers improved stress, anxiety,
-                                    happiness, and interaction with students
+                                    happiness, and interaction with students.
                                 </a>
                             </div>
                         </div>
@@ -1050,12 +1064,19 @@
                                 <div class="front">
                                     <span>Physicians</span>
                                 </div>
-                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/21279454">
-                                    Physicians at a tertiary care center
-                                </a>
-                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/25443423">
-                                    Radiologists
-                                </a>
+                                <div class="back">
+                                    <p>
+                                        In separate studies, our program improved stress, anxiety, resilience, and
+                                        quality
+                                        of life among
+                                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/21279454">
+                                            physicians at a tertiary care center
+                                        </a>
+                                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/25443423">
+                                            radiologists.
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1065,12 +1086,19 @@
                                 <div class="front">
                                     <span>Nurses</span>
                                 </div>
-                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28727625">
-                                    Improvement in anxiety, stress, burnout, resilience, happiness, and mindfulness
-                                </a>
-                                <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/31651555">
-                                    Enhanced personal and professional development
-                                </a>
+                                <div class="back">
+                                    <p>
+                                        Nurses implementing our program experienced <a
+                                            href="https://www.ncbi.nlm.nih.gov/pubmed/31651555">
+                                            personal and professional development
+                                        </a> along with improvement in anxiety, stress, burnout, resilience,
+                                        happiness, and mindfulness.
+                                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28727625">
+                                            improvement in anxiety, stress, burnout, resilience,
+                                            happiness, and mindfulness.
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1082,7 +1110,7 @@
                                 </div>
                                 <a class="back" href="https://www.ncbi.nlm.nih.gov/pubmed/27618687">
                                     Our program combined with mindfulness training improved stress, depression, anxiety,
-                                    and negative affect among caregivers
+                                    and negative affect among caregivers.
                                 </a>
                             </div>
                         </div>
@@ -1094,21 +1122,12 @@
                                     <span>Patients</span>
                                 </div>
                                 <div class="back">
-                                    <!-- <p>
-                                        In several separate studies, our program has helped the following group of
-                                        patients:
-                                         <a href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">Breast cancer
-                                            patients</a>
-                                            , patients with malignant melanoma, women with heart disease,
-                                        patients receiving a transplant, patients with depression, women receiving
-                                        infertility treatment, patients with irritable bowel syndrome.
-
-                                    </p> -->
                                     <p>
-                                        In several separate studies, our program has helped the following group of
-                                        patients:
-                                         <a href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">Breast cancer
-                                            patients</a>
+                                        Our program has helped: women with <a
+                                            href="https://www.ncbi.nlm.nih.gov/pubmed/21831722">breast cancer</a> ,
+                                        heart disease, and infertility, and patients with depression, malignant
+                                        melanoma, and irritable bowel syndrome.
+
                                     </p>
                                 </div>
                             </div>
